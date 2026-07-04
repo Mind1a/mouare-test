@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Mouare — Smart Device Maintenance & Hardware Lifecycle Platform
+    </title>
+
+    <meta
+      name="description"
+      content="Register your tech devices, track maintenance schedules, monitor warranties, discover compatible accessories, compare upgrades, access repair guides, and recycle old hardware responsibly."
+    />
+
+    <meta
+      property="og:title"
+      content="Mouare — Smart Device Maintenance Platform"
+    />
+    <meta
+      property="og:description"
+      content="Track, maintain, upgrade, repair, and recycle your tech devices from one intelligent dashboard."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header" id="top">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="#top" class="brand" aria-label="Mouare homepage">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="brand-chip"></span>
+          </span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel" id="primary-navigation">
+          <ul class="nav-links">
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#marketplace" class="nav-link">Marketplace</a></li>
+            <li><a href="#community" class="nav-link">Community</a></li>
+            <li><a href="#support" class="nav-link">Support</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <a href="/dashboard" class="dashboard-link">
+              <span class="status-dot" aria-hidden="true"></span>
+              Dashboard
+            </a>
+
+            <a href="/register" class="btn btn-primary btn-small">
+              Register Device
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero section">
+        <div class="hero-glow hero-glow-one"></div>
+        <div class="hero-glow hero-glow-two"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <p class="eyebrow">Smart Hardware Lifecycle Platform</p>
+
+            <h1>Your Devices Deserve Smarter Care.</h1>
+
+            <p class="hero-subtitle">
+              Register your laptops, PCs, phones, and accessories to track
+              maintenance schedules, monitor warranties, discover compatible
+              upgrades, access repair guides, and recycle old tech responsibly.
+            </p>
+
+            <div class="hero-actions">
+              <a href="/register" class="btn btn-primary"> Get Started Free </a>
+
+              <button class="btn btn-secondary" type="button" data-open-video>
+                <span class="play-icon" aria-hidden="true">▶</span>
+                Watch How It Works
+              </button>
+            </div>
+
+            <div class="hero-trust">
+              <div>
+                <strong>12k+</strong>
+                <span>devices tracked</span>
+              </div>
+
+              <div>
+                <strong>87%</strong>
+                <span>avg. health score</span>
+              </div>
+
+              <div>
+                <strong>24/7</strong>
+                <span>smart alerts</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="dashboard-shell">
+              <div class="dashboard-topbar">
+                <div>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <p>Device Health Dashboard</p>
+              </div>
+
+              <div class="dashboard-grid">
+                <article class="health-card main-device-card">
+                  <div class="card-header">
+                    <div>
+                      <span class="card-kicker">Primary Device</span>
+                      <h2>MacBook Pro 14”</h2>
+                    </div>
+
+                    <span class="device-icon" aria-hidden="true">⌘</span>
+                  </div>
+
+                  <div
+                    class="score-ring"
+                    aria-label="Device health score 87 percent"
+                  >
+                    <span>87%</span>
+                    <small>Health Score</small>
+                  </div>
+
+                  <div class="progress-row">
+                    <div>
+                      <span>Fan cleaning</span>
+                      <strong>12 days</strong>
+                    </div>
+
+                    <div class="progress-track">
+                      <span style="width: 72%"></span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="mini-card alert-card">
+                  <span class="mini-icon" aria-hidden="true">⚡</span>
+                  <div>
+                    <h3>Maintenance Alert</h3>
+                    <p>Replace thermal paste soon</p>
+                  </div>
+                </article>
+
+                <article class="mini-card warranty-card">
+                  <span class="mini-icon" aria-hidden="true">🛡</span>
+                  <div>
+                    <h3>Warranty</h3>
+                    <p>Expires in 42 days</p>
+                  </div>
+                </article>
+
+                <article class="comparison-card">
+                  <div class="card-header">
+                    <div>
+                      <span class="card-kicker">Upgrade Match</span>
+                      <h3>RTX 3060 → RTX 5070</h3>
+                    </div>
+
+                    <span class="badge">New</span>
+                  </div>
+
+                  <p>Better rendering, gaming, and AI workload performance.</p>
+
+                  <div class="compare-bars">
+                    <div>
+                      <span>Current</span>
+                      <div class="bar"><span style="width: 54%"></span></div>
+                    </div>
+
+                    <div>
+                      <span>Recommended</span>
+                      <div class="bar accent">
+                        <span style="width: 86%"></span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="market-card">
+                  <span class="market-icon" aria-hidden="true">♻</span>
+
+                  <div>
+                    <h3>Marketplace Ready</h3>
+                    <p>8 accessories found · 15% service discount</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="floating-chip chip-one">Warranty-aware suggestions</div>
+
+            <div class="floating-chip chip-two">Compatible accessories</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="section features-section" id="features">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow">Core Features</p>
+
+            <h2>Everything Your Devices Need After Purchase</h2>
+
+            <p>
+              From maintenance alerts and warranty tracking to repair guides,
+              compatible accessories, upgrades, and recycling — manage your
+              hardware lifecycle from one intelligent dashboard.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <article class="feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">◌</div>
+              <h3>Smart Monitoring & Maintenance Alerts</h3>
+              <p>
+                Register your devices and receive personalized reminders for
+                cleaning, part replacement, thermal paste renewal, battery
+                health checks, and general maintenance.
+              </p>
+              <a href="#how-it-works">Learn how it works</a>
+            </article>
+
+            <article class="feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">✦</div>
+              <h3>Community Repair Guides & Hardware Feedback</h3>
+              <p>
+                Explore user-generated repair guides, real hardware feedback,
+                DIY replacement tutorials, and creator-led maintenance content.
+              </p>
+              <a href="#community">Explore community</a>
+            </article>
+
+            <article class="feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">♻</div>
+              <h3>Recycle, Donate, or Trade Old Tech</h3>
+              <p>
+                Give old devices and spare parts a second life through
+                recycling, donation, and trade-in opportunities connected to
+                your device profile.
+              </p>
+              <a href="#marketplace">View marketplace</a>
+            </article>
+
+            <article class="feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">▣</div>
+              <h3>Warranty Tracking</h3>
+              <p>
+                Track warranty expiration dates and receive timely service,
+                renewal, or protection recommendations before coverage ends.
+              </p>
+              <a href="/warranty">Track warranty</a>
+            </article>
+
+            <article class="feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">⇄</div>
+              <h3>Smarter Upgrade Decisions</h3>
+              <p>
+                Compare your current device with new models and receive upgrade
+                recommendations based on age, performance, compatibility, and
+                obsolescence.
+              </p>
+              <a href="/upgrades">Compare upgrades</a>
+            </article>
+
+            <article class="feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">⌁</div>
+              <h3>Accessories That Actually Fit</h3>
+              <p>
+                Find compatible chargers, batteries, cases, RAM, SSDs, cooling
+                pads, adapters, and accessories tailored to your registered
+                devices.
+              </p>
+              <a href="/accessories">Find accessories</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="section how-section" id="how-it-works">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow">How It Works</p>
+            <h2>Register once. Get smarter device care every week.</h2>
+            <p>
+              Mouare turns your device list into a personalized maintenance,
+              warranty, upgrade, and recycling assistant.
+            </p>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card reveal">
+              <span class="step-number">01</span>
+              <h3>Register Your Device</h3>
+              <p>
+                Add your laptop, PC, phone, console, accessory, or component
+                with basic model and warranty information.
+              </p>
+            </article>
+
+            <article class="step-card reveal">
+              <span class="step-number">02</span>
+              <h3>Get Smart Recommendations</h3>
+              <p>
+                Receive maintenance reminders, warranty alerts, accessory
+                suggestions, hidden features, and upgrade insights.
+              </p>
+            </article>
+
+            <article class="step-card reveal">
+              <span class="step-number">03</span>
+              <h3>Extend, Upgrade, or Recycle</h3>
+              <p>
+                Use repair guides, service center offers, marketplace listings,
+                and recycling options to manage the full lifecycle.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Marketplace -->
+      <section class="section split-section" id="marketplace">
+        <div class="container split-grid">
+          <div class="split-content reveal">
+            <p class="eyebrow">Marketplace</p>
+
+            <h2>
+              Service centers, parts, discounts, and trade-in options in one
+              place.
+            </h2>
+
+            <p>
+              Mouare helps users move from insight to action. Find compatible
+              parts, discover nearby service centers, claim discounts on
+              consumables, and list unused hardware for donation, recycling, or
+              resale.
+            </p>
+
+            <a href="/marketplace" class="btn btn-secondary">
+              Explore Marketplace
+            </a>
+          </div>
+
+          <div class="marketplace-grid reveal">
+            <article>
+              <span>🧰</span>
+              <h3>Service Centers</h3>
+              <p>Find trusted repair and diagnostic providers.</p>
+            </article>
+
+            <article>
+              <span>🧪</span>
+              <h3>Consumables</h3>
+              <p>Thermal paste, filters, batteries, and cleaning kits.</p>
+            </article>
+
+            <article>
+              <span>🔌</span>
+              <h3>Accessories</h3>
+              <p>Compatible chargers, cases, adapters, and upgrades.</p>
+            </article>
+
+            <article>
+              <span>♻</span>
+              <h3>Recycling</h3>
+              <p>Recycle, donate, or trade devices responsibly.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Community -->
+      <section class="section community-section" id="community">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow">Community & UGC</p>
+            <h2>Real repair knowledge from real device owners.</h2>
+            <p>
+              Follow trusted hardware creators, support expert repair guides,
+              and unlock deeper tutorials for the devices you own.
+            </p>
+          </div>
+
+          <div class="community-list">
+            <article class="community-card reveal">
+              <span class="guide-tag">Guide</span>
+              <h3>How to clean laptop fans safely</h3>
+              <p>
+                Step-by-step fan cleaning instructions for better cooling and
+                lower noise.
+              </p>
+            </article>
+
+            <article class="community-card reveal">
+              <span class="guide-tag">Repair</span>
+              <h3>Thermal paste replacement guide</h3>
+              <p>
+                Learn when and how to replace thermal paste without damaging
+                components.
+              </p>
+            </article>
+
+            <article class="community-card reveal">
+              <span class="guide-tag">Upgrade</span>
+              <h3>Best SSD upgrade for older laptops</h3>
+              <p>
+                Compare compatible SSD options based on speed, capacity, and
+                device age.
+              </p>
+            </article>
+
+            <article class="community-card reveal">
+              <span class="guide-tag">Tips</span>
+              <h3>Hidden settings that improve battery life</h3>
+              <p>
+                Weekly optimization tips matched to your registered device
+                profile.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="section final-cta-section">
+        <div class="container">
+          <div class="final-cta-card reveal">
+            <p class="eyebrow">Start Free</p>
+
+            <h2>Ready to make your devices last longer?</h2>
+
+            <p>
+              Register your first device and start receiving maintenance alerts,
+              warranty reminders, upgrade suggestions, and compatible accessory
+              recommendations.
+            </p>
+
+            <div class="hero-actions center-actions">
+              <a href="/register" class="btn btn-primary">
+                Register Your First Device
+              </a>
+
+              <a href="#features" class="btn btn-secondary">
+                Explore Features
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact-section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-content reveal">
+            <p class="eyebrow">დაგვიკავშირდით</p>
+            <h2>მოგვწერეთ</h2>
+            <p>
+              გაქვთ შეკითხვა ან გსურთ მეტი გაიგოთ Mouare-ს შესახებ? შეავსეთ
+              ფორმა და ჩვენი გუნდი მალე დაგიკავშირდებათ.
+            </p>
+
+            <div class="contact-note">
+              <span aria-hidden="true">↗</span>
+              <p>
+                მოგვიყევით თქვენი იდეის ან საჭიროების შესახებ — სიამოვნებით
+                დაგეხმარებით.
+              </p>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" data-contact-form novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="first-name">სახელი</label>
+                <input
+                  id="first-name"
+                  name="firstName"
+                  type="text"
+                  autocomplete="given-name"
+                  placeholder="თქვენი სახელი"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="last-name">გვარი</label>
+                <input
+                  id="last-name"
+                  name="lastName"
+                  type="text"
+                  autocomplete="family-name"
+                  placeholder="თქვენი გვარი"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email">იმეილი</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="name@example.com"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="phone">ტელეფონი</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  autocomplete="tel"
+                  inputmode="tel"
+                  placeholder="+995 5XX XX XX XX"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="message">რით შეგვიძლია დაგეხმაროთ?</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="მოკლედ მოგვიყევით, როგორ შეგვიძლია დაგეხმაროთ..."
+                required
+              ></textarea>
+            </div>
+
+            <button class="btn btn-primary contact-submit" type="submit">
+              შეტყობინების გაგზავნა
+              <span aria-hidden="true">→</span>
+            </button>
+
+            <p
+              class="form-status"
+              data-form-status
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="support">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#top" class="brand">
+            <span class="brand-mark" aria-hidden="true">
+              <span class="brand-chip"></span>
+            </span>
+
+            <span class="brand-text">
+              <strong>Mouare</strong>
+              <small>Device Lifecycle Platform</small>
+            </span>
+          </a>
+
+          <p>
+            We are building a smarter way to manage the technology people
+            already own. Mouare helps users maintain devices, track warranties,
+            discover compatible upgrades, access community repair knowledge, and
+            responsibly recycle or donate old hardware.
+          </p>
+
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="X">X</a>
+            <a href="#" aria-label="YouTube">YT</a>
+            <a href="#" aria-label="GitHub">GH</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Platform</h3>
+          <a href="#features">Features</a>
+          <a href="#">Device Tracking</a>
+          <a href="#">Maintenance Alerts</a>
+          <a href="#">Warranty Tracker</a>
+          <a href="#">Upgrade Recommendations</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Marketplace</h3>
+          <a href="#marketplace">Service Centers</a>
+          <a href="#marketplace">Replacement Parts</a>
+          <a href="#marketplace">Accessories</a>
+          <a href="#marketplace">Discounts</a>
+          <a href="#marketplace">Recycling & Donation</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Community</h3>
+          <a href="#community">Repair Guides</a>
+          <a href="#community">Hardware Feedback</a>
+          <a href="#community">Creator Hub</a>
+          <a href="#community">Tech Tips</a>
+          <a href="#community">Newsletter</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Company</h3>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#contact">Contact</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 Mouare. All rights reserved.</p>
+
+        <div>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Community Guidelines</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="modal" data-video-modal aria-hidden="true">
+      <div class="modal-backdrop" data-close-video></div>
+
+      <div
+        class="modal-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="video-modal-title"
+      >
+        <button
+          class="modal-close"
+          type="button"
+          aria-label="Close video"
+          data-close-video
+        >
+          ×
+        </button>
+
+        <div class="video-placeholder">
+          <span aria-hidden="true">▶</span>
+
+          <div>
+            <h2 id="video-modal-title">How Mouare Works</h2>
+            <p>
+              Video placeholder: show a 60-second walkthrough explaining device
+              registration, maintenance alerts, warranty tracking,
+              recommendations, community guides, and recycling.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
