@@ -495,13 +495,27 @@
             </div>
           </div>
 
-          <form class="contact-form reveal" data-contact-form novalidate>
+          <iframe
+            name="contact-form-target"
+            data-contact-form-target
+            title="Contact form submission"
+            hidden
+          ></iframe>
+
+          <form
+            class="contact-form reveal"
+            data-contact-form
+            action="https://docs.google.com/forms/d/e/1FAIpQLSfvnlr0VSkXco-sIUYlzBmucu6QDqBorPWfYi013ro7uGh1rA/formResponse"
+            method="POST"
+            target="contact-form-target"
+            novalidate
+          >
             <div class="form-row">
               <div class="form-field">
                 <label for="first-name">სახელი</label>
                 <input
                   id="first-name"
-                  name="firstName"
+                  name="entry.478488364"
                   type="text"
                   autocomplete="given-name"
                   placeholder="თქვენი სახელი"
@@ -513,7 +527,7 @@
                 <label for="last-name">გვარი</label>
                 <input
                   id="last-name"
-                  name="lastName"
+                  name="entry.418435073"
                   type="text"
                   autocomplete="family-name"
                   placeholder="თქვენი გვარი"
@@ -527,7 +541,7 @@
                 <label for="email">იმეილი</label>
                 <input
                   id="email"
-                  name="email"
+                  name="entry.72416007"
                   type="email"
                   autocomplete="email"
                   placeholder="name@example.com"
@@ -539,7 +553,7 @@
                 <label for="phone">ტელეფონი</label>
                 <input
                   id="phone"
-                  name="phone"
+                  name="entry.1732856065"
                   type="tel"
                   autocomplete="tel"
                   inputmode="tel"
@@ -553,7 +567,7 @@
               <label for="message">რით შეგვიძლია დაგეხმაროთ?</label>
               <textarea
                 id="message"
-                name="message"
+                name="entry.36255007"
                 rows="5"
                 placeholder="მოკლედ მოგვიყევით, როგორ შეგვიძლია დაგეხმაროთ..."
                 required

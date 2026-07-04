@@ -9,6 +9,8 @@ const videoCloseButtons = document.querySelectorAll("[data-close-video]");
 const revealElements = document.querySelectorAll(".reveal");
 const contactForm = document.querySelector("[data-contact-form]");
 const formStatus = document.querySelector("[data-form-status]");
+const contactFormTarget = document.querySelector("[data-contact-form-target]");
+let contactSubmissionPending = false;
 
 function setHeaderScrollState() {
   body.classList.toggle("scrolled", window.scrollY > 20);
@@ -195,16 +197,26 @@ function handleContactSubmit(event) {
   const submitButton = contactForm.querySelector('[type="submit"]');
   submitButton.disabled = true;
   submitButton.textContent = "იგზავნება...";
+  formStatus.textContent = "თქვენი შეტყობინება იგზავნება...";
+  contactSubmissionPending = true;
 
-  window.setTimeout(() => {
-    contactForm.reset();
-    contactForm.classList.remove("was-validated");
-    submitButton.disabled = false;
-    submitButton.innerHTML =
-      'შეტყობინების გაგზავნა <span aria-hidden="true">→</span>';
-    formStatus.textContent = "მადლობა! ფორმა წარმატებით შეივსო.";
-    trackEvent("contact_form_submitted");
-  }, 700);
+  HTMLFormElement.prototype.submit.call(contactForm);
+}
+
+function handleContactResponse() {
+  if (!contactSubmissionPending) return;
+
+  contactSubmissionPending = false;
+
+  const submitButton = contactForm.querySelector('[type="submit"]');
+  contactForm.reset();
+  contactForm.classList.remove("was-validated");
+  submitButton.disabled = false;
+  submitButton.innerHTML =
+    'შეტყობინების გაგზავნა <span aria-hidden="true">→</span>';
+  formStatus.textContent =
+    "მადლობა! თქვენი შეტყობინება წარმატებით გაიგზავნა.";
+  trackEvent("contact_form_submitted");
 }
 
 window.addEventListener("scroll", setHeaderScrollState);
@@ -229,6 +241,10 @@ videoCloseButtons.forEach((button) => {
 
 if (contactForm) {
   contactForm.addEventListener("submit", handleContactSubmit);
+}
+
+if (contactFormTarget) {
+  contactFormTarget.addEventListener("load", handleContactResponse);
 }
 
 setHeaderScrollState();
